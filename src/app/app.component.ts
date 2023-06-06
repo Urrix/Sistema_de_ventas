@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Analisis';
+  opcionSeleccionada: string = '';
+
+  seleccionarOpcion(opcion: string) {
+    this.opcionSeleccionada = opcion;
+  }
 }

@@ -1,0 +1,46 @@
+<div class="container my-3">
+  <h1>Punto de Venta</h1>
+
+  <div class="card text-center">
+    <div class="card-header">Registro de nota de venta</div>
+    <div class="card-body">
+      <div class="mb-3">
+        <label for="folio" class="form-label"> Folio </label>
+        <input class="form-control" id="folio" placeholder="xxxx-xxxx" [(ngModel)]="folio">
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label"> Fecha </label>
+        <input class="form-control" id="fecha" placeholder="YYYY-MM-DD" [(ngModel)]="fecha" >
+      </div>
+      <div class="mb-3">
+        <label for="tienda" class="form-label"> Lugar </label>
+        <input class="form-control" id="tienda" placeholder="Tienda" [(ngModel)]="lugar">
+      </div>
+      <div class="mb-3">
+        <label for="desc" class="form-label"> Descripcion de producto </label>
+        <input class="form-control" id="desc" placeholder="Ej. Coca Cola" [(ngModel)]="descripcion">
+      </div>
+      <div class="mb-3">
+        <label for="usuario" class="form-label"> Usuario </label>
+        <input class="form-control" id="usuario" placeholder="Ej. 78" [(ngModel)]="usuario">
+      </div>
+      <div class="mb-3">
+        <label for="cantidad" class="form-label"> Cantidad </label>
+        <input class="form-control" id="cantidad" placeholder="Ej. 3" [(ngModel)]="cantidad">
+      </div>
+      <div class="mb-3">
+        <label for="import" class="form-label"> Importe </label>
+        <input class="form-control" id="import" placeholder="$0.00" [(ngModel)]="importe">
+      </div>
+      <div class="mb-3">
+        <label for="usuario" class="form-label"> Tipo Pago </label>
+        <input class="form-control" id="usuario" placeholder="Ej. Si" [(ngModel)]="tipoPago">
+      </div>
+      <div class="mb-3">
+        <label for="pago" class="form-label"> Pago </label>
+        <input class="form-control" id="apgo" placeholder="$0.00" [(ngModel)]="pago">
+      </div>
+      <div class="btn btn-primary" (click)="registrar()">Registrar</div>
+    </div>
+  </div>
+</div>

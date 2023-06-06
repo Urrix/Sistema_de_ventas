@@ -1,0 +1,25 @@
+<div class="container my-3">
+  <h2 class="text-center">Provedores</h2>
+  <div class="table-responsive">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Contacto</th>
+                  <th>Compañia</th>
+                  <th>Nombre</th>
+                  <th>ID Provedor</th>
+                  <th>Producto</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let provedor of provedores">
+                  <td scope="row">{{provedor.contacto}}</td>
+                  <td>{{provedor.compania}}</td>
+                  <td>{{provedor.nombre}}</td>
+                  <td>{{provedor.Id_provedor}}</td>
+                  <td>{{provedor.producto}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
